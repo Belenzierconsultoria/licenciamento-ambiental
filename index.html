@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ronaldo Belenzier | Consultoria Ambiental</title>
+<meta name="description" content="Licenciamento ambiental para atividades agrosilvipastoris e industriais, manejo florestal, recuperação de áreas degradadas, CAR, SIOUT e PGRS.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --floresta:#0e3b1c; --folha:#1b7a1b; --vivo:#00cc00; --musgo:#e8f0e2; --papel:#fbfdf9; --texto:#1c261e;
+  --titulo:"Bebas Neue",Impact,"Arial Narrow",sans-serif; --corpo:"Source Sans 3",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--corpo);color:var(--texto);background:var(--papel);line-height:1.6;font-size:1.0625rem}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--vivo);outline-offset:3px}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+h1,h2,h3{font-family:var(--titulo);font-weight:400;letter-spacing:.02em;line-height:1.02}
+
+header{background:#fff;border-bottom:1px solid #dfe8da;position:sticky;top:0;z-index:10}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.5rem}
+header img{height:54px;width:auto}
+nav{display:flex;gap:1.6rem;align-items:center}
+nav a{text-decoration:none;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--folha)}
+.btn{display:inline-block;background:var(--folha);color:#fff;text-decoration:none;font-weight:600;padding:.8rem 1.5rem;border-radius:4px;transition:background .2s}
+.btn:hover{background:var(--floresta)}
+.btn.claro{background:var(--vivo);color:var(--floresta)}
+.btn.claro:hover{background:#fff}
+nav .btn{padding:.5rem 1.1rem}
+
+.hero{background:var(--floresta);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:end;padding-top:4.5rem}
+.hero h1{font-size:clamp(3.2rem,8vw,6.2rem);margin-bottom:1.2rem}
+.hero p{max-width:34rem;color:#d3e5d0;font-size:1.15rem;margin-bottom:2rem}
+.hero .acoes{display:flex;gap:1rem;flex-wrap:wrap;padding-bottom:4.5rem}
+.hero .link{color:#fff;align-self:center;font-weight:600}
+.hero figure{align-self:stretch;min-height:420px;position:relative}
+.hero figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%;border-radius:4px 4px 0 0}
+
+section{padding-block:5rem}
+section h2{font-size:clamp(2.4rem,5vw,3.6rem);color:var(--floresta);margin-bottom:.6rem}
+.intro{max-width:40rem;margin-bottom:2.5rem;color:#41524a}
+
+.servicos{background:var(--papel)}
+.lista{border-top:2px solid var(--floresta)}
+.item{display:grid;grid-template-columns:minmax(220px,1fr) 2fr;gap:2rem;padding:1.6rem 0;border-bottom:1px solid #cfdccb}
+.item h3{font-size:2rem;color:var(--folha)}
+.item p{color:#33443a}
+.item small{display:block;margin-top:.4rem;color:#5d6f63}
+
+.sobre{background:var(--musgo)}
+.sobre .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:3.5rem;align-items:center}
+.sobre img{border-radius:4px;aspect-ratio:4/5;object-fit:cover;object-position:50% 75%;width:100%}
+.sobre p{margin-bottom:1rem;max-width:36rem}
+.formacao{list-style:none;padding:0;margin-top:1.5rem;border-left:4px solid var(--folha);padding-left:1.2rem}
+.formacao li{padding-block:.2rem;font-weight:600}
+
+.contato{background:var(--floresta);color:#fff}
+.contato h2{color:#fff}
+.contato .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.contato p{color:#d3e5d0;margin-bottom:1.5rem;max-width:32rem}
+.dados{list-style:none;padding:0;margin-bottom:2rem}
+.dados li{padding-block:.35rem;font-size:1.2rem}
+.dados span{display:block;font-size:.9rem;color:#9fc79a}
+.dados a{text-decoration:none;border-bottom:1px solid var(--vivo)}
+.contato img{border-radius:6px;box-shadow:0 0 0 1px #ffffff22}
+
+footer{background:#082a13;color:#9fc79a;font-size:.9rem;padding-block:1.4rem;text-align:center}
+
+@media (max-width:820px){
+  nav a:not(.btn){display:none}
+  .hero .wrap,.sobre .wrap,.contato .wrap{grid-template-columns:1fr}
+  .hero .wrap{gap:0;padding-top:3rem}
+  .hero .acoes{padding-bottom:2.5rem}
+  .hero figure{min-height:360px}
+  .item{grid-template-columns:1fr;gap:.4rem}
+  section{padding-block:3.5rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#topo" aria-label="Ronaldo Belenzier Consultoria Ambiental"><img src="img/logo.png" alt="Logotipo Ronaldo Belenzier Consultoria Ambiental"></a>
+    <nav aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato" class="btn">Fale comigo</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Licenciamento ambiental sem enrolação</h1>
+        <p>Cuido da regularização ambiental da sua propriedade ou empresa, do diagnóstico em campo até a licença, com apoio de geoprocessamento e georreferenciamento.</p>
+        <div class="acoes">
+          <a class="btn claro" href="https://wa.me/5554999057630?text=Ol%C3%A1%2C%20Ronaldo!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          <a class="link" href="#servicos">Ver serviços</a>
+        </div>
+      </div>
+      <figure><img src="img/campo.jpg" alt="Ronaldo Belenzier em trabalho de campo, dentro de uma mata nativa, registrando informações com o celular"></figure>
+    </div>
+  </div>
+
+  <section class="servicos" id="servicos">
+    <div class="wrap">
+      <h2>Serviços</h2>
+      <p class="intro">Atendo produtores rurais, agroindústrias e empresas que precisam regularizar ou ampliar suas atividades.</p>
+      <div class="lista">
+        <div class="item">
+          <h3>Licenciamento ambiental agrosilvipastoril</h3>
+          <p>Licenças para bovinocultura, suinocultura, avicultura e demais atividades agrosilvipastoris.</p>
+        </div>
+        <div class="item">
+          <h3>Licenciamento de atividades industriais</h3>
+          <p>Elaboração de estudos e acompanhamento do processo junto ao órgão ambiental para algumas atividades industriais.</p>
+        </div>
+        <div class="item">
+          <h3>Manejo florestal</h3>
+          <p>Licenciamento e projetos para manejo florestal, com levantamento em campo.</p>
+        </div>
+        <div class="item">
+          <h3>Recuperação de áreas degradadas</h3>
+          <p>Projetos de recuperação (PRAD) para devolver a função ambiental a áreas alteradas.</p>
+        </div>
+        <div class="item">
+          <h3>CAR</h3>
+          <p>Cadastro Ambiental Rural: elaboração, retificação e acompanhamento da sua inscrição.</p>
+        </div>
+        <div class="item">
+          <h3>SIOUT</h3>
+          <p>Cadastro e atualização de informações no sistema de outorga de uso da água.</p>
+        </div>
+        <div class="item">
+          <h3>PGRS</h3>
+          <p>Plano de Gerenciamento de Resíduos Sólidos para empresas e agroindústrias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="wrap">
+      <img src="img/campo.jpg" alt="Ronaldo Belenzier de colete, em meio às árvores durante vistoria de campo" loading="lazy">
+      <div>
+        <h2>Quem atende você</h2>
+        <p>Sou Ronaldo Belenzier, biólogo com especialização em geoprocessamento e georreferenciamento e técnico em agropecuária. Conheço tanto a legislação ambiental quanto a rotina de quem produz.</p>
+        <p>Vou até a propriedade, mapeio a área e explico cada etapa do processo, para você saber o que está sendo feito e quanto tempo leva.</p>
+        <ul class="formacao">
+          <li>Biólogo</li>
+          <li>Especialista em geoprocessamento e georreferenciamento</li>
+          <li>Técnico em agropecuária</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <div class="wrap">
+      <div>
+        <h2>Vamos conversar sobre o seu projeto</h2>
+        <p>Conte qual é a atividade e onde fica a área. Respondo com os próximos passos e um orçamento.</p>
+        <ul class="dados">
+          <li><span>Telefone e WhatsApp</span><a href="https://wa.me/5554999057630" target="_blank" rel="noopener">(54) 99905 7630</a></li>
+          <li><span>E-mail</span><a href="mailto:belenzierconsultoria@gmail.com">belenzierconsultoria@gmail.com</a></li>
+        </ul>
+        <a class="btn claro" href="https://wa.me/5554999057630?text=Ol%C3%A1%2C%20Ronaldo!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      </div>
+      <img src="img/qrcode.png" alt="QR Code para conversar com Ronaldo Belenzier no WhatsApp" loading="lazy">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="ano">2026</span> Ronaldo Belenzier Consultoria Ambiental</div>
+</footer>
+<script>document.getElementById('ano').textContent=new Date().getFullYear()</script>
+</body>
+</html>
